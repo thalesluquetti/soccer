@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - HomeViewController
 
-//Interage com viewModel e mostra dados para usuário
+//Interacts with the ViewModel and displays data to the user.
 final class HomeViewController: UIViewController {
     // MARK: Lifecycle
 
@@ -36,39 +36,34 @@ final class HomeViewController: UIViewController {
     private let viewModel: HomeViewModel
     private var cancellables: Set<AnyCancellable> = []
     private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        let tableView = UITableView().enableAutoLayout()
         tableView.register(cell: MatchesTableViewCell.self)
+        tableView.dataSource = self
+        tableView.delegate = self
         return tableView
     }()
     private lazy var activityIndicator: UIActivityIndicatorView = {
-        let indicator = UIActivityIndicatorView(style: .large)
-        indicator.hidesWhenStopped = true
-        indicator.color = .gray
-        indicator.translatesAutoresizingMaskIntoConstraints = false
-        return indicator
+        UIActivityIndicatorView(style: .large)
+            .hidesWhenStopped(true)
+            .color(.gray)
+            .enableAutoLayout()
     }()
     private lazy var errorLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .red
-        label.isHidden = true
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        return label
+        UILabel()
+            .textColor(.red)
+            .isHidden(true)
+            .alignment(.center)
+            .numberOfLines(0)
+            .enableAutoLayout()
     }()
 }
 
 extension HomeViewController {
     private func setupUI() {
-        //Poderia esta em um localizable para internacionalização ou em um Constants para uma melhor manutebilidade
-        title = "Partidas"
-        view.backgroundColor = .white
-        view.addSubview(tableView)
-        view.addSubview(errorLabel)
-        view.addSubview(activityIndicator)
-        tableView.dataSource = self
-        tableView.delegate = self
+        //Strings with internationalization handling
+        title = "matches_screen_title".localized()
+        view.background(color: .white)
+            .addSubviews(tableView, errorLabel, activityIndicator)
         
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -103,10 +98,11 @@ extension HomeViewController {
     private func handleViewState(_ state: HomeViewState) {
         state == .loading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
         if case let .error(message) = state {
-            errorLabel.text = message
-            errorLabel.isHidden = false
+            errorLabel
+                .text(message)
+                .isHidden(false)
         }
-        tableView.isHidden = state != .loaded
+        tableView.isHidden(state != .loaded)
     }
 }
 

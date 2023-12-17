@@ -15,7 +15,7 @@ protocol AppCoordinatable: Coordinatable {
 
 // MARK: - AppCoordinator
 
-//Pattern coordinator para extrair logica de navegação da ViewModel
+//Pattern coordinator to extract navigation logic from the ViewModel.
 final class AppCoordinator: AppCoordinatable {
     // MARK: Lifecycle
 

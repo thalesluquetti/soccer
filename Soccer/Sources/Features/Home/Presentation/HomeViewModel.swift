@@ -14,7 +14,7 @@ enum HomeViewState: Equatable {
     case error(message: String)
 }
 
-//Chama usecase e configura estado da tela (loading, error, loaded)
+//Calls the use case and configures the screen state (loading, error, loaded)
 final class HomeViewModel {
     // MARK: Lifecycle
 

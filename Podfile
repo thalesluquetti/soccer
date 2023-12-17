@@ -8,6 +8,7 @@ target 'Soccer' do
   # Pods for Soccer
   pod 'lottie-ios'
   pod 'AlamofireImage'
+  pod 'Sourcery'
 
   target 'SoccerTests' do
     inherit! :search_paths

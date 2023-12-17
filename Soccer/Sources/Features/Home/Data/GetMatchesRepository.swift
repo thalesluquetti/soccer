@@ -7,7 +7,7 @@
 
 import Combine
 
-//Chama API e verifica erros de API caso necessario
+//Calls the APIProvider and checks for API errors if necessary
 final class GetMatchesRepository: MatchesRepository {
     // MARK: Lifecycle
     

@@ -8,18 +8,18 @@
 import Foundation
 
 enum APIProviderError: Error {
-    /// Não foi encontrado o endpoint solicitado
+    /// The requested endpoint was not found
     case notFound
 
-    /// Ocorreu algum erro no server
+    /// An error occurred on the server
     case remoteServer
 
-    /// O server expirou a sessão informada
+    /// The server has expired the provided session
     case accessDenied
 
-    /// O cliente tentou acessar um endpoint sem informar a API-Key
+    /// The client attempted to access an endpoint without providing the API key
     case missingApiKey
 
-    /// Ocorreu erro ao executar o `APIRequestBuilder.buildRequest`
+    /// An error occurred while executing the 'APIRequestBuilder.buildRequest'
     case urlBuilderError
 }

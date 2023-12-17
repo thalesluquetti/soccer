@@ -5,15 +5,14 @@
 # OS X
 .DS_Store
 
-## Flutter modules
-Frameworks/flutter/
-
 ## Build generated
 build/
 DerivedData
 
 ## Various settings
 *.pbxuser
+export_values.sh
+Secret.swifttemplate
 !default.pbxuser
 *.mode1v3
 !default.mode1v3

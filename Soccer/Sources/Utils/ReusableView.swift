@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - ReusableView
 
-//Extension para agilizar o registro e reuso de celulas
+//Extension to expedite the registration and reuse of cells.
 protocol ReusableView: AnyObject {
     static var identifier: String { get }
     static func nib(bundle: Bundle) -> UINib

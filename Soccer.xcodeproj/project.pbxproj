@@ -30,6 +30,13 @@
 		482590A62B2CE52F002BE26E /* MatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590A52B2CE52F002BE26E /* MatchDetailsViewController.swift */; };
 		482590A82B2CE56D002BE26E /* MatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590A72B2CE56D002BE26E /* MatchDetailsViewModel.swift */; };
 		482590AA2B2CEA04002BE26E /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590A92B2CEA04002BE26E /* String+Date.swift */; };
+		482590B42B2E4BCE002BE26E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 482590B62B2E4BCE002BE26E /* Localizable.strings */; };
+		482590BF2B2E4CD4002BE26E /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590BE2B2E4CD4002BE26E /* String+Localized.swift */; };
+		482590C22B2E4F43002BE26E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590C12B2E4F43002BE26E /* Constants.swift */; };
+		482590C42B2E5286002BE26E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590C32B2E5286002BE26E /* UIView.swift */; };
+		482590C62B2E5380002BE26E /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590C52B2E5380002BE26E /* UILabel.swift */; };
+		482590C82B2E58D4002BE26E /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590C72B2E58D4002BE26E /* UIActivityIndicatorView.swift */; };
+		482590E12B2E7256002BE26E /* Secret.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590E02B2E7256002BE26E /* Secret.generated.swift */; };
 		48BAF71B2B2BCDAE000C9E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF71A2B2BCDAE000C9E42 /* AppDelegate.swift */; };
 		48BAF71D2B2BCDAE000C9E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF71C2B2BCDAE000C9E42 /* SceneDelegate.swift */; };
 		48BAF7222B2BCDAE000C9E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BAF7202B2BCDAE000C9E42 /* Main.storyboard */; };
@@ -95,6 +102,14 @@
 		482590A52B2CE52F002BE26E /* MatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewController.swift; sourceTree = "<group>"; };
 		482590A72B2CE56D002BE26E /* MatchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModel.swift; sourceTree = "<group>"; };
 		482590A92B2CEA04002BE26E /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		482590B52B2E4BCE002BE26E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		482590BD2B2E4C51002BE26E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		482590BE2B2E4CD4002BE26E /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		482590C12B2E4F43002BE26E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		482590C32B2E5286002BE26E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		482590C52B2E5380002BE26E /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		482590C72B2E58D4002BE26E /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		482590E02B2E7256002BE26E /* Secret.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.generated.swift; sourceTree = "<group>"; };
 		48BAF7172B2BCDAE000C9E42 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BAF71A2B2BCDAE000C9E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48BAF71C2B2BCDAE000C9E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,8 +229,36 @@
 				4825909D2B2CBFC1002BE26E /* ReusableView.swift */,
 				4825909F2B2CC0AC002BE26E /* UITableView+Reusable.swift */,
 				482590A92B2CEA04002BE26E /* String+Date.swift */,
+				482590BE2B2E4CD4002BE26E /* String+Localized.swift */,
+				482590C32B2E5286002BE26E /* UIView.swift */,
+				482590C52B2E5380002BE26E /* UILabel.swift */,
+				482590C72B2E58D4002BE26E /* UIActivityIndicatorView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		482590AB2B2E4B17002BE26E /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				482590B62B2E4BCE002BE26E /* Localizable.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		482590C02B2E4F39002BE26E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				482590C12B2E4F43002BE26E /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		482590DD2B2E6F52002BE26E /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				482590E02B2E7256002BE26E /* Secret.generated.swift */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 		48BAF70E2B2BCDAE000C9E42 = {
@@ -321,6 +364,9 @@
 		48BAF7572B2BD79C000C9E42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				482590DD2B2E6F52002BE26E /* Secrets */,
+				482590C02B2E4F39002BE26E /* Constants */,
+				482590AB2B2E4B17002BE26E /* Localizables */,
 				48BAF7582B2BD7A5000C9E42 /* Jsons */,
 			);
 			path = Resources;
@@ -386,6 +432,7 @@
 			buildConfigurationList = 48BAF7412B2BCDAF000C9E42 /* Build configuration list for PBXNativeTarget "Soccer" */;
 			buildPhases = (
 				1F2FC2A60493EF0D032BE5BC /* [CP] Check Pods Manifest.lock */,
+				482590CB2B2E6770002BE26E /* Generated APIKeys */,
 				48BAF7132B2BCDAE000C9E42 /* Sources */,
 				48BAF7142B2BCDAE000C9E42 /* Frameworks */,
 				48BAF7152B2BCDAE000C9E42 /* Resources */,
@@ -469,6 +516,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 48BAF70E2B2BCDAE000C9E42;
 			productRefGroup = 48BAF7182B2BCDAE000C9E42 /* Products */;
@@ -487,6 +535,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482590B42B2E4BCE002BE26E /* Localizable.strings in Resources */,
 				48BAF7272B2BCDAF000C9E42 /* LaunchScreen.storyboard in Resources */,
 				48BAF7242B2BCDAF000C9E42 /* Assets.xcassets in Resources */,
 				48BAF7222B2BCDAE000C9E42 /* Main.storyboard in Resources */,
@@ -572,6 +621,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Soccer/Pods-Soccer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		482590CB2B2E6770002BE26E /* Generated APIKeys */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generated APIKeys";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f ./export_values.sh ]\nthen\nsource ./export_values.sh\nfi\n\nif [ ! -f ./Soccer/Resources/Secrets/Secret.generated.swift ]; then\n  ${PODS_ROOT}/Sourcery/bin/sourcery --templates ./Soccer/Helpers/ --output ./Soccer/Resources/Secrets --sources ./Soccer/ --args soccer_api_key=$SOCCER_KEY\nelse\n  echo \"O arquivo já existe. Não será gerado novamente.\"\nfi\n";
+		};
 		59C5AD560DFA967CEB386B59 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -628,6 +695,7 @@
 				482590872B2CB04B002BE26E /* APIProvider.swift in Sources */,
 				48BAF7542B2BCE87000C9E42 /* SplashViewModel.swift in Sources */,
 				48BAF7612B2BDBB7000C9E42 /* HomeViewController.swift in Sources */,
+				482590BF2B2E4CD4002BE26E /* String+Localized.swift in Sources */,
 				482590892B2CB0C9002BE26E /* APIProviderResponse.swift in Sources */,
 				482590A82B2CE56D002BE26E /* MatchDetailsViewModel.swift in Sources */,
 				48BAF71B2B2BCDAE000C9E42 /* AppDelegate.swift in Sources */,
@@ -636,16 +704,21 @@
 				482590822B2CA498002BE26E /* MatchesEndpoint.swift in Sources */,
 				482590AA2B2CEA04002BE26E /* String+Date.swift in Sources */,
 				4825907A2B2CA358002BE26E /* MatchEntity.swift in Sources */,
+				482590C82B2E58D4002BE26E /* UIActivityIndicatorView.swift in Sources */,
 				4825909B2B2CBF3F002BE26E /* MatchesTableViewCell.swift in Sources */,
 				4825907E2B2CA413002BE26E /* MatchesMapper.swift in Sources */,
 				482590852B2CAFFF002BE26E /* APIRequestBuilder.swift in Sources */,
 				48BAF75E2B2BD89A000C9E42 /* HomeCoordinator.swift in Sources */,
+				482590C22B2E4F43002BE26E /* Constants.swift in Sources */,
 				482590A62B2CE52F002BE26E /* MatchDetailsViewController.swift in Sources */,
 				482590A02B2CC0AC002BE26E /* UITableView+Reusable.swift in Sources */,
 				482590952B2CB7DF002BE26E /* GetMatchesRepository.swift in Sources */,
 				482590932B2CB7A2002BE26E /* MatchesRepository.swift in Sources */,
 				482590972B2CB831002BE26E /* MatchesUseCase.swift in Sources */,
 				4825908B2B2CB149002BE26E /* APIProviderError.swift in Sources */,
+				482590E12B2E7256002BE26E /* Secret.generated.swift in Sources */,
+				482590C62B2E5380002BE26E /* UILabel.swift in Sources */,
+				482590C42B2E5286002BE26E /* UIView.swift in Sources */,
 				482590802B2CA455002BE26E /* MatchesError.swift in Sources */,
 				4825908F2B2CB3EF002BE26E /* APIConfiguration.swift in Sources */,
 				48BAF71D2B2BCDAE000C9E42 /* SceneDelegate.swift in Sources */,
@@ -685,6 +758,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		482590B62B2E4BCE002BE26E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				482590B52B2E4BCE002BE26E /* en */,
+				482590BD2B2E4C51002BE26E /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		48BAF7202B2BCDAE000C9E42 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

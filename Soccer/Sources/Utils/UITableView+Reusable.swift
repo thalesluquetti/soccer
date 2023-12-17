@@ -7,7 +7,7 @@
 
 import UIKit.UITableView
 
-//Extension para agilizar o registro e reuso de celulas
+//Extension to expedite the registration and reuse of cells.
 extension UITableView {
     final func register<C: UITableViewCell>(cell: C.Type) where C: ReusableView {
         let bundle = Bundle(for: cell.self)

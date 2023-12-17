@@ -8,12 +8,13 @@
 import Foundation
 
 struct APIConfiguration: APIConfigurable {
-    //URL base, poderia pegar da variaveis de ambiente do plist de acordo com o target selecionado
     var baseURL: URL {
         guard
-            let baseUrl = URL(string: "https://free-football-soccer-videos.p.rapidapi.com/")
+            let infoDictionary = Bundle.main.infoDictionary,
+            let baseURLString = infoDictionary["BaseURL"] as? String,
+            let baseUrl = URL(string: baseURLString)
         else {
-            fatalError("Error on unwrap base url")
+            fatalError("Error on unwrap base url from plist")
         }
         return baseUrl
     }

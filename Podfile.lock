@@ -3,22 +3,28 @@ PODS:
   - AlamofireImage (3.6.0):
     - Alamofire (~> 4.9)
   - lottie-ios (3.2.3)
+  - Sourcery (2.1.1):
+    - Sourcery/CLI-Only (= 2.1.1)
+  - Sourcery/CLI-Only (2.1.1)
 
 DEPENDENCIES:
   - AlamofireImage
   - lottie-ios
+  - Sourcery
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
     - lottie-ios
+    - Sourcery
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  Sourcery: 3a6e2e9bd439caeee302e8150dc712d2f8ef45b3
 
-PODFILE CHECKSUM: 74d70970bf33d268c264a4d7756b21e05db6163f
+PODFILE CHECKSUM: a2f27689f5aaf76ead4ab9229d963642557e2d91
 
 COCOAPODS: 1.14.3

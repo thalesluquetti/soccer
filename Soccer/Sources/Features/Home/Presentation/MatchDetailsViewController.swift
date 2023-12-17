@@ -29,35 +29,34 @@ final class MatchDetailsViewController: UIViewController {
 
     private let viewModel: MatchDetailsViewModel
     private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.text = viewModel.entity.title
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+        UILabel()
+            .text(viewModel.entity.title)
+            .alignment(.center)
+            .numberOfLines(0)
+            .enableAutoLayout()
     }()
     private lazy var dateLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.text = viewModel.entity.date
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+        UILabel()
+            .text(viewModel.entity.date)
+            .alignment(.center)
+            .numberOfLines(0)
+            .enableAutoLayout()
     }()
     private lazy var championshipLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.text = viewModel.entity.competition.name
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+        UILabel()
+            .text(viewModel.entity.competition.name)
+            .alignment(.center)
+            .numberOfLines(0)
+            .enableAutoLayout()
     }()
 }
 
 extension MatchDetailsViewController {
     private func setupUI() {
-        title = "Detalhes"
-        view.backgroundColor = .white
-        view.addSubview(titleLabel)
-        view.addSubview(dateLabel)
-        view.addSubview(championshipLabel)
+        //Strings with internationalization handling
+        title = "details_screen_title".localized()
+        view.background(color: .white)
+            .addSubviews(titleLabel, dateLabel, championshipLabel)
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

@@ -32,16 +32,13 @@ final class SplashViewController: UIViewController {
 
     private let viewModel: SplashViewModel
     private let animationView: AnimationView = {
-        let animationView = AnimationView()
-        animationView.translatesAutoresizingMaskIntoConstraints = false
-        return animationView
+        AnimationView().enableAutoLayout()
     }()
 }
 
 extension SplashViewController {
     private func setupUI() {
-        view.backgroundColor = .white
-        view.addSubview(animationView)
+        view.background(color: .white).addSubview(animationView)
 
         NSLayoutConstraint.activate([
             animationView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -54,7 +51,7 @@ extension SplashViewController {
     }
 
     private func setupLottieAnimation() {
-        if let animation = Animation.named("soccer_animation") {
+        if let animation = Animation.named(Constants.Animations.splash) {
             animationView.animation = animation
             animationView.loopMode = .playOnce
             animationView.play(completion: { [weak self] (finished) in

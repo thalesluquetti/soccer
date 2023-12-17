@@ -7,7 +7,7 @@
 
 import Combine
 
-//Chama repository e verifica regras de negocio caso necessario e cuida da transformação de DTOs
+//Invokes the repository, checks business rules if necessary, and handles the transformation of DTOs
 final class GetMatchesUseCase: MatchesUseCase {
     // MARK: Lifecycle
     

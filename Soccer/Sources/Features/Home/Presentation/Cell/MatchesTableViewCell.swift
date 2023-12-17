@@ -29,10 +29,11 @@ final class MatchesTableViewCell: UITableViewCell {
     func configure(entity: MatchEntity) {
         imageView?.image = nil
         if let imageURL = URL(string: entity.thumbnail) {
-            //Utilizado lib para cacheamento automatico de imagens, melhorando performance e economizando recursos
+            //Utilized a library for automatic image caching, improving performance and saving resources
             imageView?.af_setImage(withURL: imageURL, completion: { [weak self] _ in
-                self?.imageView?.contentMode = .scaleAspectFill
-                self?.imageView?.clipsToBounds = true
+                self?.imageView?
+                    .contentMode(.scaleAspectFill)
+                    .clipToBounds(true)
                 self?.layoutSubviews()
             })
         }
@@ -41,14 +42,11 @@ final class MatchesTableViewCell: UITableViewCell {
 
 extension MatchesTableViewCell {
     private func setupUI() {
-        imageView?.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            contentView.heightAnchor.constraint(equalToConstant: 200),
-            imageView?.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageView?.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            imageView?.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            imageView?.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-        ].compactMap {$0})
+        imageView?
+            .enableAutoLayout()
+            .parent(contentView)
+            .size(height: 200)
+            .fillParent()
     }
 }
 
