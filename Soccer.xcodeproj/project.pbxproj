@@ -37,6 +37,20 @@
 		482590C62B2E5380002BE26E /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590C52B2E5380002BE26E /* UILabel.swift */; };
 		482590C82B2E58D4002BE26E /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590C72B2E58D4002BE26E /* UIActivityIndicatorView.swift */; };
 		482590E12B2E7256002BE26E /* Secret.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590E02B2E7256002BE26E /* Secret.generated.swift */; };
+		482590E62B2E7426002BE26E /* MockAppCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590E52B2E7426002BE26E /* MockAppCoodinator.swift */; };
+		482590E82B2E7475002BE26E /* SplashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590E72B2E7475002BE26E /* SplashViewModelTests.swift */; };
+		482590EC2B2E75C2002BE26E /* MatchDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590EB2B2E75C2002BE26E /* MatchDetailsViewModelTests.swift */; };
+		482590EE2B2E7635002BE26E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590ED2B2E7635002BE26E /* HomeViewModelTests.swift */; };
+		482590F02B2E765E002BE26E /* MockMatchesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590EF2B2E765E002BE26E /* MockMatchesUseCase.swift */; };
+		482590F22B2E7699002BE26E /* MockHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590F12B2E7699002BE26E /* MockHomeCoordinator.swift */; };
+		482590F42B2E8405002BE26E /* GetMatchesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590F32B2E8405002BE26E /* GetMatchesUseCaseTests.swift */; };
+		482590F62B2E8436002BE26E /* MockMatchesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590F52B2E8436002BE26E /* MockMatchesRepository.swift */; };
+		482590F82B2E84BB002BE26E /* MatchesEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590F72B2E84BB002BE26E /* MatchesEndpointTests.swift */; };
+		482590FA2B2E850E002BE26E /* GetMatchesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590F92B2E850E002BE26E /* GetMatchesRepositoryTests.swift */; };
+		482590FC2B2E8552002BE26E /* MockApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590FB2B2E8552002BE26E /* MockApiProvider.swift */; };
+		482590FF2B2E867B002BE26E /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590FE2B2E867B002BE26E /* APIClientTests.swift */; };
+		482591012B2E86CD002BE26E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482591002B2E86CD002BE26E /* MockURLSession.swift */; };
+		482591032B2E86FB002BE26E /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482591022B2E86FB002BE26E /* MockURLSessionDataTask.swift */; };
 		48BAF71B2B2BCDAE000C9E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF71A2B2BCDAE000C9E42 /* AppDelegate.swift */; };
 		48BAF71D2B2BCDAE000C9E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF71C2B2BCDAE000C9E42 /* SceneDelegate.swift */; };
 		48BAF7222B2BCDAE000C9E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BAF7202B2BCDAE000C9E42 /* Main.storyboard */; };
@@ -110,6 +124,20 @@
 		482590C52B2E5380002BE26E /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		482590C72B2E58D4002BE26E /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
 		482590E02B2E7256002BE26E /* Secret.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.generated.swift; sourceTree = "<group>"; };
+		482590E52B2E7426002BE26E /* MockAppCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppCoodinator.swift; sourceTree = "<group>"; };
+		482590E72B2E7475002BE26E /* SplashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelTests.swift; sourceTree = "<group>"; };
+		482590EB2B2E75C2002BE26E /* MatchDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		482590ED2B2E7635002BE26E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		482590EF2B2E765E002BE26E /* MockMatchesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMatchesUseCase.swift; sourceTree = "<group>"; };
+		482590F12B2E7699002BE26E /* MockHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeCoordinator.swift; sourceTree = "<group>"; };
+		482590F32B2E8405002BE26E /* GetMatchesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMatchesUseCaseTests.swift; sourceTree = "<group>"; };
+		482590F52B2E8436002BE26E /* MockMatchesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMatchesRepository.swift; sourceTree = "<group>"; };
+		482590F72B2E84BB002BE26E /* MatchesEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesEndpointTests.swift; sourceTree = "<group>"; };
+		482590F92B2E850E002BE26E /* GetMatchesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMatchesRepositoryTests.swift; sourceTree = "<group>"; };
+		482590FB2B2E8552002BE26E /* MockApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiProvider.swift; sourceTree = "<group>"; };
+		482590FE2B2E867B002BE26E /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		482591002B2E86CD002BE26E /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		482591022B2E86FB002BE26E /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		48BAF7172B2BCDAE000C9E42 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BAF71A2B2BCDAE000C9E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48BAF71C2B2BCDAE000C9E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -261,6 +289,65 @@
 			path = Secrets;
 			sourceTree = "<group>";
 		};
+		482590E22B2E7405002BE26E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				482590E52B2E7426002BE26E /* MockAppCoodinator.swift */,
+				482590EF2B2E765E002BE26E /* MockMatchesUseCase.swift */,
+				482590F12B2E7699002BE26E /* MockHomeCoordinator.swift */,
+				482590F52B2E8436002BE26E /* MockMatchesRepository.swift */,
+				482590FB2B2E8552002BE26E /* MockApiProvider.swift */,
+				482591002B2E86CD002BE26E /* MockURLSession.swift */,
+				482591022B2E86FB002BE26E /* MockURLSessionDataTask.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		482590E32B2E740C002BE26E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				482590EA2B2E75B3002BE26E /* Details */,
+				482590E92B2E75AC002BE26E /* Home */,
+				482590E42B2E7413002BE26E /* Splash */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		482590E42B2E7413002BE26E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				482590E72B2E7475002BE26E /* SplashViewModelTests.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		482590E92B2E75AC002BE26E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				482590ED2B2E7635002BE26E /* HomeViewModelTests.swift */,
+				482590F32B2E8405002BE26E /* GetMatchesUseCaseTests.swift */,
+				482590F72B2E84BB002BE26E /* MatchesEndpointTests.swift */,
+				482590F92B2E850E002BE26E /* GetMatchesRepositoryTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		482590EA2B2E75B3002BE26E /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				482590EB2B2E75C2002BE26E /* MatchDetailsViewModelTests.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		482590FD2B2E866A002BE26E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				482590FE2B2E867B002BE26E /* APIClientTests.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		48BAF70E2B2BCDAE000C9E42 = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +388,9 @@
 		48BAF7302B2BCDAF000C9E42 /* SoccerTests */ = {
 			isa = PBXGroup;
 			children = (
+				482590FD2B2E866A002BE26E /* Provider */,
+				482590E32B2E740C002BE26E /* Features */,
+				482590E22B2E7405002BE26E /* Mocks */,
 				48BAF7312B2BCDAF000C9E42 /* SoccerTests.swift */,
 			);
 			path = SoccerTests;
@@ -729,7 +819,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482590F42B2E8405002BE26E /* GetMatchesUseCaseTests.swift in Sources */,
+				482590EE2B2E7635002BE26E /* HomeViewModelTests.swift in Sources */,
+				482590FA2B2E850E002BE26E /* GetMatchesRepositoryTests.swift in Sources */,
+				482590FC2B2E8552002BE26E /* MockApiProvider.swift in Sources */,
+				482591012B2E86CD002BE26E /* MockURLSession.swift in Sources */,
+				482590F62B2E8436002BE26E /* MockMatchesRepository.swift in Sources */,
+				482591032B2E86FB002BE26E /* MockURLSessionDataTask.swift in Sources */,
+				482590E82B2E7475002BE26E /* SplashViewModelTests.swift in Sources */,
+				482590F82B2E84BB002BE26E /* MatchesEndpointTests.swift in Sources */,
 				48BAF7322B2BCDAF000C9E42 /* SoccerTests.swift in Sources */,
+				482590F02B2E765E002BE26E /* MockMatchesUseCase.swift in Sources */,
+				482590E62B2E7426002BE26E /* MockAppCoodinator.swift in Sources */,
+				482590FF2B2E867B002BE26E /* APIClientTests.swift in Sources */,
+				482590EC2B2E75C2002BE26E /* MatchDetailsViewModelTests.swift in Sources */,
+				482590F22B2E7699002BE26E /* MockHomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

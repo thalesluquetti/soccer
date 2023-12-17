@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - MatchesDTO
 
-struct MatchDTO: Codable {
+struct MatchDTO: Codable, Equatable {
     let title: String
     let thumbnail: String
     let date: String
@@ -20,7 +20,7 @@ struct MatchDTO: Codable {
     }
 }
 
-struct CompetitionDTO: Codable {
+struct CompetitionDTO: Codable, Equatable {
     let name: String
 
     func toEntity() -> CompetitionEntity {

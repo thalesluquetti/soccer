@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "1897049D-6189-4EB6-8E7A-DF7D72CC9DB6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Soccer.xcodeproj",
+      "identifier" : "48BAF7162B2BCDAE000C9E42",
+      "name" : "Soccer"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Soccer.xcodeproj",
+        "identifier" : "48BAF72C2B2BCDAF000C9E42",
+        "name" : "SoccerTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Soccer.xcodeproj",
+        "identifier" : "48BAF7362B2BCDAF000C9E42",
+        "name" : "SoccerUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
