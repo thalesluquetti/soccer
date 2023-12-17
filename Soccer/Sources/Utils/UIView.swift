@@ -16,7 +16,7 @@ extension UIView {
 // MARK: Chain action
 extension UIView {
     @discardableResult
-    public func enableAutoLayout() -> Self {
+    func enableAutoLayout() -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         return self
     }
