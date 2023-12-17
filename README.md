@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 Este projeto é desenvolvido em Swift, seguindo uma arquitetura MVVM-C (Model-View-ViewModel com Coordinators) e adotando os princípios do Clean Architecture. 
-<br/><br/>A implementação utiliza o framework Combine para facilitar a programação reativa, além de alguns conceitos de viewCode, como, por exemplo, o uso de "Chain action", melhorando a legibilidade do código ao montar elementos de tela e diminuindo o tempo de codificação (algo semelhante ao que temos nos frameworks declarativos hoje, como SwiftUI, Flutter, etc). 
+<br/><br/>A implementação utiliza o framework Combine para facilitar a programação reativa, viewCode com o conceito "chain action", melhorando a legibilidade do código ao montar elementos de tela e diminuindo o tempo de codificação (algo semelhante ao que temos nos frameworks mais declarativos hoje, como SwiftUI, Flutter, etc). 
 <br/><br/>Para realizar o parse dos dados de APIs, utilizei o padrão de DTO "Data Transfer Object" encapsulando os dados relacionados em uma única estrutura, proporcionando uma forma organizada e coesa de representar informações, além de simplificar o processo de serialização que já é muito eficiente com o uso do Codable.
 <br/><br/>Foram utilizadas algumas libs externas confiáveis para adiantar algumas implementações, como por exemplo, o Lottie para realizar a animação da splash, AlamofireImage para o gerenciamento de download e cache de imagens e Sourcery para geração de codigo ao realizar criptografia de chaves.
 
