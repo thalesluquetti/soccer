@@ -30,9 +30,13 @@ Combine é utilizado para facilitar a programação reativa no projeto. Suas pri
 - Desalocação Automática: Ajuda a evitar vazamentos de memória, já que os assinantes são automaticamente desalocados quando não são mais necessários.
 - Compatibilidade Nativa: Como parte do ecossistema Swift, Combine se integra perfeitamente com outras APIs Swift, evitando o uso de libs externas e seus possíveis riscos.
 
+## Testes
+Foi implementado os testes unitarios das camadas core do app utilizando o padrão Given-When-Then para mais clareza do objetivo dos testes.
+<br/>Para testes de tela (ViewController) foi uilizado uma [lib](https://github.com/pointfreeco/swift-snapshot-testing) para implementação de criação/analise de snapshots.
+
 ## Próximos Passos
 Os próximos passos para o desenvolvimento deste projeto podem ser:
 
-- Inclusão de testes de controller com utilização de Snapshots
+- Complementar implementação de testes de controller com utilização de Snapshots
 - Inclusão de testes de UI, validando comportamento dos fluxos
 - Aplicar conceito de MiFeatures monorepo, tornando o código mais eficiente, melhorando gestão de dependências e colaboração (diminuindo a incidência de conflitos, por exemplo).
