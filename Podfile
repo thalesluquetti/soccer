@@ -12,11 +12,9 @@ target 'Soccer' do
   
   target 'SoccerTests' do
     inherit! :search_paths
-    # Pods for testing
   end
   
   target 'SoccerUITests' do
-    # Pods for testing
   end
 
   post_install do |installer|

@@ -10,7 +10,7 @@ import UIKit
 final class MatchDetailsViewController: UIViewController {
     // MARK: Lifecycle
 
-    init(viewModel: MatchDetailsViewModel) {
+    init(viewModel: MatchDetailsViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -19,15 +19,15 @@ final class MatchDetailsViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func loadView() {
+        super.loadView()
         setupUI()
     }
     
     // MARK: Private properties
 
-    private let viewModel: MatchDetailsViewModel
+    private let viewModel: MatchDetailsViewModelProtocol
     private lazy var titleLabel: UILabel = {
         UILabel()
             .text(viewModel.entity.title)

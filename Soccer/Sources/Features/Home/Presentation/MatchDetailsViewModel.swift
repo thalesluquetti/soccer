@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class MatchDetailsViewModel {
+final class MatchDetailsViewModel: MatchDetailsViewModelProtocol {
     // MARK: Lifecycle
 
     init(entity: MatchEntity) {

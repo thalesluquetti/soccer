@@ -51,6 +51,9 @@
 		482590FF2B2E867B002BE26E /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482590FE2B2E867B002BE26E /* APIClientTests.swift */; };
 		482591012B2E86CD002BE26E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482591002B2E86CD002BE26E /* MockURLSession.swift */; };
 		482591032B2E86FB002BE26E /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482591022B2E86FB002BE26E /* MockURLSessionDataTask.swift */; };
+		483BEC012B30B39F00A562BA /* MatchDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BEC002B30B39F00A562BA /* MatchDetailsViewModelProtocol.swift */; };
+		483BEC052B30B55400A562BA /* MatchDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BEC042B30B55400A562BA /* MatchDetailsViewControllerTests.swift */; };
+		483BEC0B2B30BCD900A562BA /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 483BEC0A2B30BCD900A562BA /* SnapshotTesting */; };
 		48BAF71B2B2BCDAE000C9E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF71A2B2BCDAE000C9E42 /* AppDelegate.swift */; };
 		48BAF71D2B2BCDAE000C9E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF71C2B2BCDAE000C9E42 /* SceneDelegate.swift */; };
 		48BAF7222B2BCDAE000C9E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BAF7202B2BCDAE000C9E42 /* Main.storyboard */; };
@@ -138,6 +141,8 @@
 		482590FE2B2E867B002BE26E /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		482591002B2E86CD002BE26E /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		482591022B2E86FB002BE26E /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		483BEC002B30B39F00A562BA /* MatchDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		483BEC042B30B55400A562BA /* MatchDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		48BAF7172B2BCDAE000C9E42 /* Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BAF71A2B2BCDAE000C9E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48BAF71C2B2BCDAE000C9E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84CB9F264EBF8F52B26B8E9 /* Pods_SoccerTests.framework in Frameworks */,
+				483BEC0B2B30BCD900A562BA /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				482590EB2B2E75C2002BE26E /* MatchDetailsViewModelTests.swift */,
+				483BEC042B30B55400A562BA /* MatchDetailsViewControllerTests.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -497,6 +504,7 @@
 				48BAF7622B2BDBC0000C9E42 /* HomeViewModel.swift */,
 				482590A52B2CE52F002BE26E /* MatchDetailsViewController.swift */,
 				482590A72B2CE56D002BE26E /* MatchDetailsViewModel.swift */,
+				483BEC002B30B39F00A562BA /* MatchDetailsViewModelProtocol.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -552,6 +560,9 @@
 				48BAF72F2B2BCDAF000C9E42 /* PBXTargetDependency */,
 			);
 			name = SoccerTests;
+			packageProductDependencies = (
+				483BEC0A2B30BCD900A562BA /* SnapshotTesting */,
+			);
 			productName = SoccerTests;
 			productReference = 48BAF72D2B2BCDAF000C9E42 /* SoccerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -609,6 +620,9 @@
 				"pt-BR",
 			);
 			mainGroup = 48BAF70E2B2BCDAE000C9E42;
+			packageReferences = (
+				483BEC092B30BCA500A562BA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 48BAF7182B2BCDAE000C9E42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -792,6 +806,7 @@
 				482590912B2CB410002BE26E /* APIConfigurable.swift in Sources */,
 				48BAF7562B2BCE8F000C9E42 /* SplashViewController.swift in Sources */,
 				482590822B2CA498002BE26E /* MatchesEndpoint.swift in Sources */,
+				483BEC012B30B39F00A562BA /* MatchDetailsViewModelProtocol.swift in Sources */,
 				482590AA2B2CEA04002BE26E /* String+Date.swift in Sources */,
 				4825907A2B2CA358002BE26E /* MatchEntity.swift in Sources */,
 				482590C82B2E58D4002BE26E /* UIActivityIndicatorView.swift in Sources */,
@@ -824,6 +839,7 @@
 				482590FA2B2E850E002BE26E /* GetMatchesRepositoryTests.swift in Sources */,
 				482590FC2B2E8552002BE26E /* MockApiProvider.swift in Sources */,
 				482591012B2E86CD002BE26E /* MockURLSession.swift in Sources */,
+				483BEC052B30B55400A562BA /* MatchDetailsViewControllerTests.swift in Sources */,
 				482590F62B2E8436002BE26E /* MockMatchesRepository.swift in Sources */,
 				482591032B2E86FB002BE26E /* MockURLSessionDataTask.swift in Sources */,
 				482590E82B2E7475002BE26E /* SplashViewModelTests.swift in Sources */,
@@ -1180,6 +1196,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		483BEC092B30BCA500A562BA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		483BEC0A2B30BCD900A562BA /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 483BEC092B30BCA500A562BA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48BAF70F2B2BCDAE000C9E42 /* Project object */;
 }
